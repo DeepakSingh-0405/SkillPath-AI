@@ -1,0 +1,65 @@
+:root {
+  /* Colors */
+  --color-primary: #6C63FF;        /* Purple — the brand color */
+  --color-accent: #00D4AA;         /* Teal — secondary accent */
+  --color-bg: #0A0B1A;             /* Dark background */
+  --color-surface: #111228;        /* Card/panel background */
+  --color-text: #F0F0FF;           /* Primary text */
+  --color-text-secondary: #9898B0; /* Muted text */
+  --color-border: rgba(255,255,255,0.08); /* Subtle borders */
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --font-size-xs: 0.75rem;         /* 12px */
+  --font-size-sm: 0.875rem;        /* 14px */
+  --font-size-base: 1rem;          /* 16px */
+  --font-size-lg: 1.125rem;        /* 18px */
+  --font-size-xl: 1.25rem;         /* 20px */
+  --font-size-2xl: 1.5rem;         /* 24px */
+  --font-size-4xl: 2.25rem;        /* 36px */
+
+  /* Spacing */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+
+  /* Borders & Shadows */
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-glow: 0 0 20px rgba(108,99,255,0.3);
+
+  /* Transitions */
+  --transition: all 0.2s ease;
+
+  /* Compatibility aliases for existing component styles. */
+  --bg: var(--color-surface);
+  --text: var(--color-text-secondary);
+  --text-h: var(--color-text);
+  --border: var(--color-border);
+  --accent: var(--color-primary);
+  --shadow: var(--shadow-md);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, textarea { font: inherit; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
