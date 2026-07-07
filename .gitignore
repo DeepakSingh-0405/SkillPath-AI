@@ -1,1 +1,7 @@
 .agents
+node_modules/
+.env
+backend/.env
+frontend/.env
+dist/
+*.log
