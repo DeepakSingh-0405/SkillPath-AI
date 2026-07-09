@@ -67,7 +67,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5001;
-if (process.env.NODE_ENV !== 'production' || process.env.RUN_LOCAL_SERVER === 'true') {
+if (!process.env.VERCEL) {
   app.listen(PORT, () => console.log(`SkillPath AI API running on port ${PORT}`));
 }
 
